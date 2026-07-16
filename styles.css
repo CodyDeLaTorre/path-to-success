@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+:root {
+  --teal: #4CA7C0;
+  --purple: #484FB7;
+  --lavender: #6B8FE7;
+  --yellow: #E9BB57;
+  --pink: #D9526F;
+  --dark-gray: #1E1E1E;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--lavender);
+  color: var(--dark-gray);
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+h1, h2, h3 {
+  font-family: 'Kavoon', cursive;
+  font-weight: 400;
+  margin: 0;
+}
+
+img {
+  border: none;
+}
+
+/* ============ Header ============ */
+header {
+  background: var(--purple);
+  color: var(--white);
+  text-align: center;
+  padding: 1.75rem 0 0;
+}
+
+header > h1,
+header > p {
+  padding: 0 1.5rem;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+header > p {
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  margin: 0.25em 0 1.25em;
+  opacity: 0.9;
+}
+
+/* ============ Nav / Menu bar ============ */
+nav {
+  background-color: var(--yellow);
+  padding: 1rem 1.25rem 1.25rem;
+  width: 100%;
+}
+
+nav h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.15em;
+  font-weight: 800;
+  color: var(--dark-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav li {
+  background-color: var(--white);
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 0.65rem;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+#our-services {
+  background: var(--purple);
+  color: var(--white);
+  padding: 1.5rem 1.25rem 2rem;
+}
+
+#our-services > h2 {
+  font-size: 1.6em;
+  margin-bottom: 0.4rem;
+}
+
+#our-services > section > h3 {
+  font-family: 'Kavoon', cursive;
+  font-size: 1.05em;
+  color: var(--yellow);
+  margin: 1.25rem 0 0.9rem;
+}
+
+#our-services > section > section {
+  background: var(--white);
+  color: var(--dark-gray);
+  border-radius: 12px 12px;
+}
+
+#our-services > section > section > img {
+  width: 100%;
+  height: 90px;
+  object-fit: contain;
+  padding: 1.5rem 0 0.5rem;
+}
+
+#our-services > section > section > h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--purple);
+  font-size: 1.05em;
+  padding: 0 1.25rem;
+  margin: 0;
+}
+
+#our-services > section > section > p {
+  font-size: 0.9em;
+  line-height: 1.5;
+  padding: 0.5rem 1.25rem 1.5rem;
+  margin: 0 0 1.25rem;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.15);
+}
+
+#why-choose-us {
+  background: var(--pink);
+  color: var(--white);
+  padding: 1.75rem 1.25rem;
+}
+
+#why-choose-us > h2 {
+  font-size: 1.6em;
+  margin-bottom: 1rem;
+}
+
+#why-choose-us ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+#why-choose-us li {
+  background: var(--white);
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.15);
+}
+
+#why-choose-us li:nth-child(1) { 
+  background: var(--teal);
+}
+#why-choose-us li:nth-child(3) { 
+  background: var(--yellow);
+}
+
+#prices {
+  background: var(--purple);
+  color: var(--white);
+  padding: 1.75rem 1.25rem 2rem;
+}
+
+#prices > h2 {
+  font-size: 1.6em;
+  padding-bottom: 0.4rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 0 1.75rem;
+}
+
+table:empty {
+  display: none;
+  margin: 0;
+}
+
+caption {
+  font-family: 'Kavoon', cursive;
+  font-size: 1em;
+  color: var(--yellow);
+  text-align: left;
+  caption-side: top;
+  padding-bottom: 0.6rem;
+}
+
+table th {
+  background: var(--yellow);
+}
+
+table th {
+  color: var(--dark-gray);
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 1em;
+  text-align: center;
+  padding: 0.6rem;
+}
+
+table tr td {
+  color: var(--dark-gray);
+  padding: 0.65rem 1rem;
+  border-top: 1px solid #eee;
+}
+
+table tr td:first-child {
+  text-align: left;
+}
+
+table tr td:last-child {
+  text-align: right;
+  font-weight: 600;
+}
+
+#first-steps {
+  background: var(--pink);
+  color: var(--white);
+  text-align: center;
+  padding: 1.75rem 1.5rem 2rem;
+}
+
+#first-steps h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.75rem;
+}
+
+#first-steps p {
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+#first-steps button {
+  background: var(--white);
+  color: var(--pink);
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9em;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem 2rem;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.15);
+}
+
+#first-steps button:hover {
+  background: var(--yellow);
+  color: var(--dark-gray);
+}
+
+footer {
+  background: var(--purple);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.8em;
+}
+
+footer a {
+  color: var(--white);
+  text-decoration: underline;
+  margin: 0 0.5rem;
+}
+
+footer p {
+  display: inline;
+  margin: 0 0.5rem;
+}
