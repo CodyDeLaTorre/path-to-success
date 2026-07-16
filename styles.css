@@ -1,5 +1,31 @@
+/* CSS BY Cody De La Torre */
+
+/* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
+/* CSS RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ROOT VARIABLES */
 :root {
   --teal: #4CA7C0;
   --purple: #484FB7;
@@ -10,30 +36,21 @@
   --white: #ffffff;
 }
 
-* {
-  box-sizing: border-box;
-}
-
+/* GLOBAL STYLES (mobile first/small) */
 body {
-  margin: 0;
   font-family: 'Inter', sans-serif;
   background: var(--lavender);
   color: var(--dark-gray);
-  max-width: 600px;
+  max-width: 450px;
   margin-inline: auto;
 }
 
 h1, h2, h3 {
   font-family: 'Kavoon', cursive;
   font-weight: 400;
-  margin: 0;
 }
 
-img {
-  border: none;
-}
-
-/* ============ Header ============ */
+/* Header */
 header {
   background: var(--purple);
   color: var(--white);
@@ -47,7 +64,7 @@ header > p {
 }
 
 h1 {
-  font-size: 2.4em;
+  font-size: 2em;
 }
 
 header > p {
@@ -57,7 +74,7 @@ header > p {
   opacity: 0.9;
 }
 
-/* ============ Nav / Menu bar ============ */
+/* Nav / Menu bar */
 nav {
   background-color: var(--yellow);
   padding: 1rem 1.25rem 1.25rem;
@@ -66,7 +83,7 @@ nav {
 
 nav h2 {
   font-family: 'Inter', sans-serif;
-  font-size: 1.15em;
+  font-size: 1.1em;
   font-weight: 800;
   color: var(--dark-gray);
   text-transform: uppercase;
@@ -76,9 +93,6 @@ nav h2 {
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -88,7 +102,7 @@ nav li {
   background-color: var(--white);
   color: var(--purple);
   font-weight: 700;
-  font-size: 0.85em;
+  font-size: 0.8em;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.03em;
@@ -98,11 +112,10 @@ nav li {
 }
 
 nav a {
-  color: inherit;
-  text-decoration: none;
   display: block;
 }
 
+/* Our Services */
 #our-services {
   background: var(--purple);
   color: var(--white);
@@ -110,21 +123,22 @@ nav a {
 }
 
 #our-services > h2 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   margin-bottom: 0.4rem;
 }
 
 #our-services > section > h3 {
   font-family: 'Kavoon', cursive;
-  font-size: 1.05em;
+  font-size: 1em;
   color: var(--yellow);
   margin: 1.25rem 0 0.9rem;
 }
 
-#our-services > section > section {
+#our-services > section > section > img,
+#our-services > section > section > h4,
+#our-services > section > section > p {
   background: var(--white);
   color: var(--dark-gray);
-  border-radius: 12px 12px;
 }
 
 #our-services > section > section > img {
@@ -132,19 +146,20 @@ nav a {
   height: 90px;
   object-fit: contain;
   padding: 1.5rem 0 0.5rem;
+  border-radius: 12px 12px 0 0;
 }
 
 #our-services > section > section > h4 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   color: var(--purple);
-  font-size: 1.05em;
+  font-size: 1em;
   padding: 0 1.25rem;
   margin: 0;
 }
 
 #our-services > section > section > p {
-  font-size: 0.9em;
+  font-size: 0.85em;
   line-height: 1.5;
   padding: 0.5rem 1.25rem 1.5rem;
   margin: 0 0 1.25rem;
@@ -152,6 +167,7 @@ nav a {
   box-shadow: 0 4px 0 rgba(0,0,0,0.15);
 }
 
+/* Why Choose Us */
 #why-choose-us {
   background: var(--pink);
   color: var(--white);
@@ -159,14 +175,11 @@ nav a {
 }
 
 #why-choose-us > h2 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   margin-bottom: 1rem;
 }
 
 #why-choose-us ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.75rem;
@@ -182,13 +195,10 @@ nav a {
   box-shadow: 3px 3px 0 rgba(0,0,0,0.15);
 }
 
-#why-choose-us li:nth-child(1) { 
-  background: var(--teal);
-}
-#why-choose-us li:nth-child(3) { 
-  background: var(--yellow);
-}
+#why-choose-us li:nth-child(1) { background: var(--teal);}
+#why-choose-us li:nth-child(3) { background: var(--yellow);}
 
+/* Pricing */
 #prices {
   background: var(--purple);
   color: var(--white);
@@ -196,7 +206,7 @@ nav a {
 }
 
 #prices > h2 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   padding-bottom: 0.4rem;
 }
 
@@ -216,7 +226,7 @@ table:empty {
 
 caption {
   font-family: 'Kavoon', cursive;
-  font-size: 1em;
+  font-size: 0.9em;
   color: var(--yellow);
   text-align: left;
   caption-side: top;
@@ -240,6 +250,7 @@ table tr td {
   color: var(--dark-gray);
   padding: 0.65rem 1rem;
   border-top: 1px solid #eee;
+  font-size: 0.9em;
 }
 
 table tr td:first-child {
@@ -251,6 +262,7 @@ table tr td:last-child {
   font-weight: 600;
 }
 
+/* Take the First Step */
 #first-steps {
   background: var(--pink);
   color: var(--white);
@@ -259,12 +271,12 @@ table tr td:last-child {
 }
 
 #first-steps h2 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-bottom: 0.75rem;
 }
 
 #first-steps p {
-  font-size: 0.9em;
+  font-size: 0.85em;
   line-height: 1.5;
   margin-bottom: 1.25rem;
 }
@@ -276,7 +288,7 @@ table tr td:last-child {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 0.9em;
+  font-size: 0.85em;
   border: none;
   border-radius: 8px;
   padding: 0.9rem 2rem;
@@ -289,6 +301,7 @@ table tr td:last-child {
   color: var(--dark-gray);
 }
 
+/* Footer */
 footer {
   background: var(--purple);
   color: var(--white);
@@ -298,7 +311,6 @@ footer {
 }
 
 footer a {
-  color: var(--white);
   text-decoration: underline;
   margin: 0 0.5rem;
 }
